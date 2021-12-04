@@ -36,9 +36,17 @@
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_height="match_parent"
-            android:descendantFocusability="afterDescendants"/>
+            android:descendantFocusability="afterDescendants"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+            <ImageView
+                android:id="@+id/tab_indicator1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:minWidth="50dp" />
+        </FrameLayout>
 
         <include
             android:id="@+id/lin"
@@ -48,25 +56,18 @@
         <include layout="@layout/layout_search"/>
 
         <LinearLayout
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_marginBottom="16dp"
             android:id="@+id/indicator_layout"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/tab_indicator1"
-                android:layout_width="wrap_content"
-                android:minWidth="50dp"
-                android:layout_marginRight="2dp"
-                android:layout_height="match_parent" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp">
 
             <ImageView
                 android:id="@+id/tab_indicator2"
                 android:layout_width="wrap_content"
-                android:minWidth="50dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="2dp"
-                android:layout_height="match_parent" />
+                android:minWidth="50dp" />
         </LinearLayout>
 
         <com.leinardi.android.speeddial.SpeedDialOverlayLayout

@@ -98,6 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/anonymous" />
+
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/chkSmbDisableIpcSignature"
         android:layout_width="wrap_content"
@@ -110,4 +111,10 @@
         android:layout_height="wrap_content"
         android:text="@string/want_help"
         />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 </LinearLayout>

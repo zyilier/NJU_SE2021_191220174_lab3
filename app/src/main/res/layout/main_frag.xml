@@ -29,21 +29,26 @@
      As the main content view, the view below consumes the entire
      space available using match_parent in both dimensions.
     -->
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/activity_main_swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:focusable="false"
-        >
+        android:focusable="false">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:divider="@null"
-            android:scrollbars="none"
             android:descendantFocusability="afterDescendants"
-            />
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

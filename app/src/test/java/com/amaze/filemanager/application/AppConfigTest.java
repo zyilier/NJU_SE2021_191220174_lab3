@@ -35,6 +35,7 @@ import java.lang.reflect.Field;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
@@ -120,4 +121,26 @@ public class AppConfigTest {
     AppConfig.getInstance().setMainActivityContext(mock);
     assertNotNull(AppConfig.getInstance().getScreenUtils());
   }
+  private AppConfig a;
+
+  @Before
+  public void setUp() throws Exception{
+    a = new AppConfig();
+  }
+
+
+
+  @Test
+  public void mult() throws Exception{
+    assertEquals(12, a.mult(3,4));
+  }
+  @Test
+  public void mult1() throws Exception{
+    assertEquals(12, a.mult(2,6));
+  }
+  @Test
+  public void mult2() throws Exception{
+    assertEquals(12, a.mult(3,6));
+  }
+
 }

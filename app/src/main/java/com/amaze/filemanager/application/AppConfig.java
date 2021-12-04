@@ -254,4 +254,9 @@ public class AppConfig extends GlideApplication {
               R.string.app_ui_crash));
     }
   }
+
+  public  int mult(int x,int y){
+    return x*y;
+  }
+
 }
